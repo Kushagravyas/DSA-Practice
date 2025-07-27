@@ -98,3 +98,22 @@ function changeArray (arr) {
 }
 
 console.log(changeArray([9,8,7]))
+
+
+// Insert elements at given index.
+
+function insertAtIndex (arr, index, value) {
+    if (index < 0 || index > arr.length) return arr;
+    arr.splice(index, 0, value);
+    return arr;
+}
+console.log(insertAtIndex([1, 2, 3, 4], 2, 6))
+
+function deleteInsertAt (arr, index, ) {
+    if (index < 0 || index > arr.length) return arr;
+    arr.splice(index, 2, 2,3);
+    return arr;
+}
+
+console.log(deleteInsertAt([1, 4, 5, 4], 1, 2, 2, 3 ))
+
