@@ -32,3 +32,12 @@ function findNumber (arr) {
 }
 
 console.log(findNumber([1,3,4,5,7,8]))
+
+function findNum (arr) {
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) max = arr[i];
+    }
+    return max;
+}
+console.log(findNum([12,34,56,78]))
