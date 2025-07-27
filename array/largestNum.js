@@ -41,3 +41,13 @@ function findNum (arr) {
     return max;
 }
 console.log(findNum([12,34,56,78,78]))
+
+function findNum (arr) {
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max ) max = arr[i];
+  }
+  return max;
+}
+
+console.log(findNum([2,5,8,9]))
