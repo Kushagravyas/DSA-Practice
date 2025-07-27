@@ -51,3 +51,50 @@ function findNum (arr) {
 }
 
 console.log(findNum([2,5,8,9]))
+
+// Check if array is sorted 
+
+function isSorted (arr) {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < arr[i-1])  return false;
+        }
+         return true;
+    }
+
+    console.log(isSorted([2,4,6,45,67,89]))
+
+function isOk (arr) {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < arr[i - 1]) return false;
+    }
+    return true;
+}
+
+console.log(isOk([2,4,1,6]))
+
+// Reverse a Array (in-place)
+
+function reverseArray (arr) {
+    let start = 0, end = arr.length-1;
+    while (start < end) {
+      [arr[start], arr[end]] = [arr[end], arr[start]];
+      start++;
+      end--;
+    }
+    return arr;
+}
+
+console.log(reverseArray([1,2,3,4,5,6]))
+
+
+function changeArray (arr) {
+    let start = 0; end = arr.length-1;
+    while (start < end) {
+        [arr[start], arr[end]] = [arr[end], arr[start]];
+        start++;
+        end--;
+    }
+    return arr;
+}
+
+console.log(changeArray([9,8,7]))
