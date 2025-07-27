@@ -40,4 +40,4 @@ function findNum (arr) {
     }
     return max;
 }
-console.log(findNum([12,34,56,78]))
+console.log(findNum([12,34,56,78,78]))
